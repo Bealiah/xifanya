@@ -23,6 +23,9 @@ a{
 .text-center{
     text-align: center;
 }
+.table-div{
+    display:table;
+}
 .row {
     margin-right: -15px;
     margin-left: -15px;
@@ -798,6 +801,27 @@ a{
 .row-fluid .container{
     padding:0 20%;
 }
+.row-fluid .showPanel .title hr{
+    margin: 10px auto;
+    width: 60px;
+    border: 2px solid #e5ae49;
+}
+.row-fluid .showPanel .title-description{
+    padding: 20px 16%;
+    text-align: center;
+    line-height: 26px;
+}
+.row-fluid .showPanel .lg-primary-btn{
+    background: rgb(229, 174, 73);display: inline-block;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 14px 70px;
+    border: none;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 50px auto 120px;
+}
 .row-fluid .title{
     text-align:center;
     font-size:30px;
@@ -825,13 +849,19 @@ a{
     padding:0 20%;
     overflow: hidden;
 }
-.footer .footer-top{
+.footer .footer-wrap{
     padding: 90px 0 55px;
     background-color: rgba(0, 0, 0, 0.84);
     width:100%;
     height:100%;
 }
-
+.footer .footer-top{
+    margin-bottom: 73px;
+}
+.footer .footer-top .accent{
+    font-size: 80px;
+    color: #e5ae49;
+}
 .footer .footerattr{
     width:33.3%;
     margin: 0 0 22px;
@@ -877,7 +907,15 @@ a{
     border:1px solid #FFF;
     border-width: 0 0 1px;
     margin-bottom: 13px;
-    padding: 0 0 8px;
+    padding: 10px 0;
+}
+.footer .submit-btn{
+    font-size: 13px;
+    font-weight: 400;
+    width: auto;
+    color: #e5ae49;
+    border-color: #e5ae49;
+    padding: 10px 22px 3px 0;
 }
 .footer .footer-bottom{
     background:#000;
@@ -896,7 +934,7 @@ a{
     color:#fff;
 }
 .banner .container{
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
 }
 .banner .container .wpb_wrapper{
     height:200px;
@@ -904,7 +942,7 @@ a{
 .banner .page-title{
     margin:40px 0 26px;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 /*************index*******************/
@@ -950,6 +988,66 @@ a{
 }
 .slide.active .dropback{
     background: transparent;
+}
+.brand{
+    box-shadow: 0 -1px 3px 2px rgba(0, 0, 0, 0.1);
+}
+.brand .owl-wrapper{
+    width:100%;
+    clear:both;
+    text-align:center;
+    padding:20px 0 16px;
+    display:table;
+    overflow:hidden;
+}
+.brand .owl-wrapper  .title{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 10%;
+    margin:0;
+}
+.brand .owl-wrapper  .title h2{
+    font-size:24px;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+.brand .content{
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+}
+.brand .content img{
+    max-width: 260px;
+    margin: auto 0;
+    float: left;
+    width: 45%;
+}
+#index .news{
+    -webkit-transition: all 0ms ease; transform: translate3d(0px, 0px, 0px);
+    -moz-transition: all 0ms ease; transform: translate3d(0px, 0px, 0px);
+    -o-transition: all 0ms ease; transform: translate3d(0px, 0px, 0px);
+    -ms-transition: all 0ms ease; transform: translate3d(0px, 0px, 0px);
+    transition: all 0ms ease; transform: translate3d(0px, 0px, 0px);
+}
+#index .news .owl-item{
+    padding:0 0 30px;
+}
+#index .news .owl-item .content{
+    margin:0 15px;
+}
+#index .news .owl-item .bg-icon{
+    position: absolute;
+    font-size: 100px;
+    line-height:140px;
+    z-index: -1;
+    color: #eee;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+#index .news .owl-item p{
+    line-height: 30px;color: #666;height: 90px;overflow:hidden;
 }
 /*************about*******************/
 .about-image-block{
@@ -1061,6 +1159,8 @@ a{
 
 #products .banner, #news .banner,#contact .banner{
     color:#9b9b9b;
+    font-family: microsoft YaHei;
+    font-weight: 400;
 }
 
 
@@ -1150,20 +1250,24 @@ a{
 
 @media screen and (max-width:1440px) {
     .header .container, .row-fluid .container, .footer .row, .product-container, .news-container,#contact .contact-container{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 8%;
+        padding-right: 8%;
     }
 }
 @media screen and (max-width:1200px) {
     .header .container{
-        padding-left:5%;
-        padding-right:5%;
+        padding-left:4%;
+        padding-right:4%;
+    }
+    .header .menu .menu-item a{
+        padding-left:15px;
+        padding-right:15px;
     }
 }
 @media screen and (max-width:992px) {
     .header .container{
-        padding-left:5%;
-        padding-right:5%;
+        padding-left:3%;
+        padding-right:3%;
     }
     .header .nav{
         position: absolute;
@@ -1176,6 +1280,7 @@ a{
         float: left;
         background: #fff;
         margin-top: 13px;
+        display:none;
     }
     .header .nav .menu .menu-item{
         width: 100%;
@@ -1195,6 +1300,20 @@ a{
     }
     .header .nav .navbar-toggle{
         display: block;
+    }
+}
+@media screen and (max-width:800px) {
+    .brand .owl-wrapper  .title h2{
+        font-size:16px;
+    }
+    .footer .footerattr{
+        width:50%;
+    }
+    .footer .message-block{
+        width:100%;
+    }
+    .footer .footer-top .accent{
+        font-size:50px;
     }
 }
 @media  screen and (max-width: 500px) {
@@ -1249,7 +1368,9 @@ a{
 .bx-controls  .bx-pager-item a:hover , .bx-controls  .bx-pager-item a.active{
     background: #000;
 }
-
+.bx-wrapper .bx-controls-direction{
+    display:none;
+}
 .bx-wrapper .bx-controls-direction a{
     position: absolute;
     top: 50%;
@@ -1270,4 +1391,64 @@ a{
     right: 10px;
     background: url(../images/right-arrow.png) no-repeat 0 0;
     background-size:100%;
+}
+
+/***************pageList******************/
+.page-btn-block{
+    float:left;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin: 30px auto 80px;
+    clear: both;
+}
+.page-btn-block .page-list {
+    display: inline-block;
+}
+.page-list li {
+    float: left;
+    background: #eee;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+.page-list li .outside{
+     width:46px;
+}
+.page-list li .select{
+     color:#fff;
+     background:#DB6269;
+}
+.page-list span,.page-list a{
+    float:left;
+    background:#eee;
+    margin-left:10px;
+    width:24px;
+    height:24px;
+    line-height:24px;
+    border-radius:2px;
+    text-align:center;
+    text-decoration: none;
+    color:#333;
+}
+.page-list span.nextPage,.page-list span.prevPage,
+.page-list a.nextPage,.page-list a.prevPage{
+   width:54px;
+}
+
+.page-list span.current,.page-list span:hover,.page-list span:focus,
+.page-list a.current,.page-list a:hover,.page-list a:focus{
+   color:#fff;
+   background:#DB6269;
+}
+
+.page-list span.disabled,
+.page-list a.disabled{
+     width:54px;
+     background:#eee;
+     color:#333;
 }
