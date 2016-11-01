@@ -3,31 +3,6 @@ var fs=require('fs');
 var express = require('express');
 var router = express.Router();
 
-/*
-router.get('/',function(req, res) {
-    var name=req.query.name;
-    var obj={};
-    if(name){//update
-        obj={
-            title:name+'|电影|管理|moive.me',
-            label:'编辑电影:'+name,
-            movie:name
-        };
-        var callback=function(err){
-            return res.render('movie', obj);
-            console.log('err',err);
-        };
-        Product.save(obj,callback);
-
-    } else {
-        return res.render('movie',{
-            title:'新增加|电影|管理|moive.me',
-            label:'新增加电影',
-            movie:false
-        });
-    }
-});
-*/
 
 router.get('/',function(req,res){
     var params=req.query;
@@ -36,11 +11,10 @@ router.get('/',function(req,res){
 });
 
 function init(){
-    //var files=handleEvents.scanFile('../data/jsonData');
     var files=[];
-    files.push('./data/jsonData/productList.json');
+    files.push('./data/jsonData/newsList.json');
     var callback=function(content,file){
-        productList=content.productList;
+        productList=content.productList;console.log(content);
     };
     for(var i=0;i<files.length;i++){
         fs.readFile(files[i],'utf8',function(err,data){

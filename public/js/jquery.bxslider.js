@@ -107,8 +107,8 @@
 		 * Makes slideshow responsive
 		 */
 		// first get the original window dimens (thanks alot IE)
-		var windowWidth = $(window).width();
-		var windowHeight = $(window).height();
+		var windowWidth = options.panelWidth||$(window).width();
+		var windowHeight = options.panelHeight||$(window).height();
 
 
 
@@ -193,6 +193,7 @@
 			// also strip any margin and padding from el
 			el.css({
 				width: slider.settings.mode == 'horizontal' ? (slider.children.length * 100 + 215) + '%' : 'auto',
+				height:slider.settings.panelHeight?'100%':'',
 				position: 'relative'
 			});
 			// if using CSS, add the easing property
@@ -221,6 +222,7 @@
 			// apply css to all slider children
 			slider.children.css({
 				'float': slider.settings.mode == 'horizontal' ? 'left' : 'none',
+				height:slider.settings.panelHeight?'100%':'',
 				listStyle: 'none',
 				position: 'relative'
 			});
@@ -279,7 +281,13 @@
 				$(this).one('load', function() {
 				  if(++count == total) callback();
 				}).each(function() {
-				  if(this.complete) $(this).load();
+				  if(this.complete){
+					  if(slider.settings.panelHeight){
+						  $(this).css({'max-width':'100%','max-height':'100%',width:'auto',margin:'0 auto'}).load();
+					  }else{
+						  $(this).load();
+					  }
+				  }
 				});
 			});
 		}
@@ -301,8 +309,14 @@
 			setSlidePosition();
 			// if "vertical" mode, always use adaptiveHeight to prevent odd behavior
 			if (slider.settings.mode == 'vertical') slider.settings.adaptiveHeight = true;
+
 			// set the viewport height
-			slider.viewport.height(getViewportHeight());
+			if(slider.settings.panelHeight){
+				slider.viewport.height( slider.viewport.parent().height() );
+			}else{
+				slider.viewport.height(getViewportHeight());
+			}
+
 			// make sure everything is positioned just right (same as a window resize)
 			el.redrawSlider();
 			// onSliderLoad callback
@@ -368,6 +382,7 @@
 				height = Math.max.apply(Math, children.map(function(){
 					return $(this).outerHeight(false);
 				}).get());
+
 			}
 
 			if(slider.viewport.css('box-sizing') == 'border-box'){
@@ -1287,7 +1302,13 @@
 			// resize all children in ratio to new screen size
 			slider.children.add(el.find('.bx-clone')).width(getSlideWidth());
 			// adjust the height
-			slider.viewport.css('height', getViewportHeight());
+			var height=slider.settings.panelHeight;
+			if(height){
+				slider.viewport.css('height', height);
+			}else{
+				slider.viewport.css('height', getViewportHeight());
+			}
+
 			// update the slide position
 			if(!slider.settings.ticker) setSlidePosition();
 			// if active.last was true before the screen resize, we want
