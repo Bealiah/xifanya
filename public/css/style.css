@@ -839,7 +839,7 @@ input,textarea{
 
 .footer{
     clear:both;
-    background-image: url(../images/footer_bg.jpg)!important;
+    background-image: url('http://of0ohiudu.bkt.clouddn.com/base/footer_bg.jpg')!important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

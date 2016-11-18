@@ -1,19 +1,47 @@
-//var Product = require('../data/models/product.js');
 var fs=require('fs');
 var express = require('express');
 var router = express.Router();
+var path='./data/jsonData/messageList.json';
 
+var messageList=[];
+var data;
 
 router.get('/',function(req,res){
     var params=req.query;
+    params.id=messageList.length;
+   messageList.push({
+        "id":messageList.length,
+        "userName":params.userName,
+        "email":params.email,
+        "phone":params.phone,
+        "message":params.message
+    });
+    fs.createWriteStream(path,{flags:messageList});
+    res.end('200');
+});
+router.post('/',function(req,res,next){
+    var params=req.body;
 
-    var list=handleEvents.getProductList(params);
-    res.send({list:list,series:series});
+    params.id=messageList.length;
+    data.list.push({
+        "id":messageList.length,
+        "userName":params.userName,
+        "email":params.email,
+        "phone":params.phone,
+        "message":params.message
+    });
+
+    fs.writeFile(path,JSON.stringify(data,null,4),function(err){
+        if(err){
+            res.end('404');
+        }else{
+            res.end('200');
+        }
+    });
+
+
 });
 
-
-var productList=[],
-    series=[];
 
 var handleEvents={
     getProductList:function (params){
@@ -54,14 +82,13 @@ var handleEvents={
 };
 
 function init(){
-    getList(productList,'./data/jsonData/productList.json',function(content,file){
-        productList=JSON.parse(content).list;
+    getList(messageList,function(content,file){
+        data=JSON.parse(content);
+        messageList=data.list;
     });
-    getList(series,'./data/jsonData/series.json',function(content,file){
-        series=JSON.parse(content).list;
-    });
+
 }
-function getList(list,path,callback){
+function getList(list,callback){
     var files=[];
     files.push(path);
 
