@@ -201,4 +201,76 @@
       "time":1462856400000
     }
   ]
+{
+  "list":[
+    {
+      "id":0,
+      "title":"墙布变色的六个主要原因",
+      "description":"大师，为啥我墙布都变色了，而且有点腐蚀了。那是因为选择的胶黏剂产品不合,胶黏剂产品大多为……",
+      "url":"/news.html?detail=1",
+      "img":"http://of0ohiudu.bkt.clouddn.com/01AYS-01A-00.jpg",
+      "series":"YS",
+      "content":"article_1.html",
+      "time":1452315600000
+    },
+    {
+      "id":1,
+      "title":"【雅绣·墙布】用墙布为空间定制独一无二,雅绣给你好看!",
+      "description":"",
+      "url":"/news.html?detail=2",
+      "img":"http://of0ohiudu.bkt.clouddn.com/01AYS-01A-01.jpg",
+      "series":"YX",
+      "content":"article_2.html",
+      "time":1453179600000
+    },
+    {
+      "id":2,
+      "title":"墙布贵在质量，生活重在品质",
+      "description":"一个空间墙面占据了很大部分，自然不能忽略墙体， 为了保护墙体，提高居住舒适度，许多人会选……",
+      "url":"/news.html?detail=3",
+      "img":"http://of0ohiudu.bkt.clouddn.com/01AYS-01A-02.jpg",
+      "series":"YS",
+      "content":"article_3.html",
+        "time":1455858000000
+    },
+    {
+      "id":3,
+      "title":"【雅绣·墙布】无纺底墙布的特点，你真的知道吗？",
+      "description":"",
+      "url":"/news.html?detail=4",
+      "img":"http://of0ohiudu.bkt.clouddn.com/01AYS-01A-03.jpg",
+      "series":"YX",
+      "content":"article_4.html",
+      "time":1456117200000
+    },
+    {
+      "id":4,
+      "title":"基膜不干就贴墙布，结果成这样了……",
+      "description":"家住某小区的吴女士，最近因为一件事情很是烦恼，新房刚装完两个月就出现了，这样或是那样的问……",
+      "url":"/news.html?detail=5",
+      "img":"http://of0ohiudu.bkt.clouddn.com/01AYS-01A-04.jpg",
+      "series":"YS-o1A",
+      "content":"article_5.html",
+      "time":"1458622800000"
+    },
+    {
+      "id":5,
+      "title":"施工说明",
+      "description":"施工要点：墙面要干透平整，光滑，干净，建议最好涂上一层基膜……",
+      "url":"/news.html?detail=6",
+      "img":"http://of0ohiudu.bkt.clouddn.com/01AYS-01A-04.jpg",
+      "series":"YS-o1A",
+      "content":"article_6.html",
+      "time":1461128400000
+    },
+    {
+      "id":6,
+      "title":"墙布施工工艺中，因施工不当而误判为质量问题",
+      "url":"/news.html?detail=7",
+      "img":"http://of0ohiudu.bkt.clouddn.com/01AYS-01A-04.jpg",
+      "series":"YS-o1A",
+      "content":"article_7.html",
+      "time":1462856400000
+    }
+  ]
 }
