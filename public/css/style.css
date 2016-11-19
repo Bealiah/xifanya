@@ -1182,11 +1182,14 @@ input,textarea{
     float:left;
 
 }
+.product-list li .item-block{
+    padding:0 15px;
+}
 .product-list li a{
     display:block;
     float:left;
     position: relative;
-    margin:0 15px;
+    width:100%;
     border:2px solid #F2D6A2;
     text-align:center;
     color:#333;

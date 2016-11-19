@@ -23,8 +23,8 @@ router.get('/',function(req,res){
 
 
 var handleEvents={
-    getData:function (params){console.log('ddd',params.type);
-        var series=Number(params.type);
+    getData:function (params){
+        var series=params.type===''?undefined:params.type;
         var page=Number(params.page);
         var size=Number(params.size);
         var start=page*size;
@@ -38,6 +38,7 @@ var handleEvents={
                     list:productList.slice(start,start+size)
             };
         }else{
+            series=Number(series);
             list= this.where(productList,{type:series});
 
             return {
