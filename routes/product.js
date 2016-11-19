@@ -3,63 +3,50 @@ var fs=require('fs');
 var express = require('express');
 var router = express.Router();
 
-/*
-router.get('/',function(req, res) {
-    var name=req.query.name;
-    var obj={};
-    if(name){//update
-        obj={
-            title:name+'|电影|管理|moive.me',
-            label:'编辑电影:'+name,
-            movie:name
-        };
-        var callback=function(err){
-            return res.render('movie', obj);
-            console.log('err',err);
-        };
-        Product.save(obj,callback);
 
-    } else {
-        return res.render('movie',{
-            title:'新增加|电影|管理|moive.me',
-            label:'新增加电影',
-            movie:false
-        });
-    }
-});
-*/
+var productList=[],
+    series=[];
 
 router.get('/',function(req,res){
     var params=req.query;
+    var obj=handleEvents.getData(params);
 
-    return handleEvents.getProductList(params);
+    res.send({
+        list:obj.list,
+        series:series,
+        info:{
+            page:obj.page
+        }
+    });
 });
 
-function init(){
-    //var files=handleEvents.scanFile('../data/jsonData');
-    var files=[];
-    files.push('./data/jsonData/productList.json');
-    var callback=function(content,file){
-        productList=content.productList;
-    };
-    for(var i=0;i<files.length;i++){
-        fs.readFile(files[i],'utf8',function(err,data){
-            if(err){
-               // writeLog({filename:file},'read file content error');
-                console.log(err,'read file content error');
-            }else{
-                callback(data);
-            }
-        });
-    }
-}
 
-var productList=[];
 
 var handleEvents={
-    getProductList:function (params){
-        var start=params.page*params.size;
-        return list=productList.slice(start,start+params.size+1);
+    getData:function (params){console.log('ddd',params.type);
+        var series=Number(params.type);
+        var page=Number(params.page);
+        var size=Number(params.size);
+        var start=page*size;
+        var pageCount,list;
+
+        if(isNaN(series)){
+
+            pageCount=Math.ceil(productList.length/size);
+            return {
+                    page:pageCount,
+                    list:productList.slice(start,start+size)
+            };
+        }else{
+            list= this.where(productList,{type:series});
+
+            return {
+                page:Math.ceil(list.length/size),
+                list:list.slice(start,start+size)
+            };
+
+        }
+
     },
     scanFile:function(path){
         var fileList    = [],
@@ -86,11 +73,47 @@ var handleEvents={
 
         return fileList;
     },
-    where:function(){
-
+    where:function(e,t){
+        var i, s = e.length, a = 0, o = 0,arr=[];
+        if (0 === e.length)
+            return arr;
+        for (var n = 0; n < s; n++) {
+            a = 0,
+                o = 0;
+            for (var r in t)
+                a++,
+                    e[n][r] === t[r] && (i = e[n],
+                    o++);
+            if (a === o)
+                arr.push(e[n]);
+        }
+        return arr;
     }
 };
 
+function init(){
+    getList(productList,'./data/jsonData/productList.json',function(content,file){
+        productList=JSON.parse(content).list;
+    });
+    getList(series,'./data/jsonData/series.json',function(content,file){
+        series=JSON.parse(content).list;
+    });
+}
+function getList(list,path,callback){
+    var files=[];
+    files.push(path);
+
+    for(var i=0;i<files.length;i++){
+        fs.readFile(files[i],'utf8',function(err,data){
+            if(err){
+                // writeLog({filename:file},'read file content error');
+                console.log(err,'read file content error');
+            }else if(typeof callback ==='function'){
+                callback(data);
+            }
+        });
+    }
+}
 init();
 
 module.exports=router;
