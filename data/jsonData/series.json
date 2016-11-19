@@ -1,0 +1,39 @@
+{
+  "list":[
+      {"title":"YS-01A~YS-09A","type":0,"url":"/products?page=0&type=0"},
+      {"title":"YS-B07~YS-B22","type":1,"url":"/products?page=0&type=1"},
+      {"title":"YS-C01~YS-C20","type":2,"url":"/products?page=0&type=2"},
+      {"title":"YS-D01~YS-D20","type":3,"url":"/products?page=0&type=3"},
+      {"title":"YS-E","type":4,"url":"/products?page=0&type=4"},
+      {"title":"YS-F","type":5,"url":"/products?page=0&type=5"},
+      {"title":"YS-G","type":6,"url":"/products?page=0&type=6"},
+      {"title":"YS-H","type":7,"url":"/products?page=0&type=7"},
+      {"title":"YS-I","type":8,"url":"/products?page=0&type=8"},
+      {"title":"YS-J","type":9,"url":"/products?page=0&type=9"},
+      {"title":"YS-K","type":10,"url":"/products?page=0&type=10"},
+      {"title":"YS-M","type":11,"url":"/products?page=0&type=11"},
+      {"title":"YS-p","type":12,"url":"/products?page=0&type=12"},
+      {"title":"YS-Q","type":13,"url":"/products?page=0&type=13"},
+      {"title":"YS-R","type":14,"url":"/products?page=0&type=14"}
+  ]
+
+{
+  "list":[
+      {"title":"YS-01A~YS-09A","type":0},
+      {"title":"YS-B07~YS-B22","type":1},
+      {"title":"YS-C01~YS-C20","type":2},
+      {"title":"YS-D01~YS-D20","type":3},
+      {"title":"YS-E","type":4},
+      {"title":"YS-F","type":5},
+      {"title":"YS-G","type":6},
+      {"title":"YS-H","type":7},
+      {"title":"YS-I","type":8},
+      {"title":"YS-J","type":9},
+      {"title":"YS-K","type":10},
+      {"title":"YS-M","type":11},
+      {"title":"YS-p","type":12},
+      {"title":"YS-Q","type":13},
+      {"title":"YS-R","type":14}
+  ]
+
+}
