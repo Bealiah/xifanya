@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -207,6 +206,32 @@
             $.post('/message',arr).success(function(){
                 alert('感谢您的留言');
             });
+
+        });
+
+        var headerDiv=$('.header');
+        var $menu=headerDiv.find('.menu');
+        var toggleBtn=headerDiv.find('.navbar-toggle:visible');
+
+
+        toggleBtn.on('click',function(e){
+            $menu.toggle();
+            e.stopPropagation();
+        });
+        $menu.on('click',function(e){
+            e.stopPropagation();
+        });
+
+
+        headerDiv.on('click',function(e){
+            if(toggleBtn.length===0) {
+                e.stopPropagation();
+            }
+        });
+        $(document).on('click',function(e){
+            if(toggleBtn.length>0){
+                $menu.hide();
+            }
 
         });
     });

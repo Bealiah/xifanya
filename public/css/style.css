@@ -721,7 +721,7 @@ input,textarea{
     font-weight: bold;
 }
 .header .navbar-toggle{
-    background:url('../images/menu-toggle-icon.png') no-repeat center center;
+    background:url('../images/menu-toggle-icon3.png') no-repeat center center;
     width:30px;
     height:50px;
     margin:8px 8% 0 0;
@@ -964,6 +964,9 @@ input,textarea{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.24) 12%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.09) 73%, rgba(0, 0, 0, 0) 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0)；
 
+}
+#index .header .navbar-toggle{
+    background:url('../images/menu-toggle-icon.png') no-repeat center center;
 }
 #index .header.deep-bg{
     background:rgba(0, 0, 0, 0.7);
