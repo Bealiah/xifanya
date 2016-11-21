@@ -68,7 +68,7 @@
 <div class="row-fluid contact-container">
     <div class="container">
         <div class="map">
-            <img src="images/about_bg.jpg" />
+            <img src="http://of0ohiudu.bkt.clouddn.com/base/about_bg.jpg?imageView2/2/w/1000" />
         </div>
         <div class="row" style="padding:50px;">
             <div style="line-height: 24px;">
@@ -115,7 +115,7 @@
                         <a href="javascript:;">
                             <div class="item-bg"></div>
                             <div class="img-box">
-                                <img src="images/honor_1.jpg" />
+                                <img src="http://of0ohiudu.bkt.clouddn.com/base/honor_1.jpg?imageView2/2/w/290" />
                             </div>
                         </a>
 
@@ -124,7 +124,7 @@
                         <a href="javascript:;">
                             <div class="item-bg"></div>
                             <div class="img-box">
-                                <img src="images/honor_1.jpg" />
+                                <img src="http://of0ohiudu.bkt.clouddn.com/base/honor_2.jpg?imageView2/2/w/290" />
                             </div>
                         </a>
                     </li>
@@ -132,7 +132,7 @@
                         <a href="javascript:;">
                             <div class="item-bg"></div>
                             <div class="img-box">
-                                <img src="images/honor_1.jpg" />
+                                <img src="http://of0ohiudu.bkt.clouddn.com/base/honor_3.jpg?imageView2/2/w/290" />
                             </div>
                         </a>
                     </li>
@@ -140,7 +140,7 @@
                         <a href="javascript:;">
                             <div class="item-bg"></div>
                             <div class="img-box">
-                                <img src="images/honor_1.jpg" />
+                                <img src="http://of0ohiudu.bkt.clouddn.com/base/honor_4.jpg?imageView2/2/w/290" />
                             </div>
                         </a>
                     </li>
@@ -208,9 +208,9 @@
                         <h3 class="title-widget"><span>留言</span></h3>
                         <form name="messageForm" role="form">
                             <div class="ContactForm">
-                                <input type="text" name="your-name" value="" size="40"  placeholder="您的称呼...">
-                                <input type="email" name="your-email" value="" size="40" placeholder="您的邮箱/手机号...">
-                                <textarea name="your-message" style="height:80px;" cols="40" rows="10"placeholder="捎句话..."></textarea>
+                                <input type="text" name="userName" value="" size="40"  placeholder="您的称呼...">
+                                <input type="email" name="email" value="" size="40" placeholder="您的邮箱/手机号...">
+                                <textarea name="message" style="height:80px;" cols="40" rows="10"placeholder="捎句话..."></textarea>
                                 <input type="submit" value="发 送" class="submit-btn">
                             </div>
                         </form>
@@ -233,7 +233,20 @@
         </div><!--end class container-->
     </div><!--end class footerbottom -->
 </footer>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[name="messageForm"]').on('submit',function(e){
+            e.preventDefault();
+            var arr=$(e.currentTarget).serializeArray();
 
+            $.post('/message',arr).success(function(){
+                alert('感谢您的留言');
+            });
+
+        });
+    });
+</script>
 
 </body>
 </html>

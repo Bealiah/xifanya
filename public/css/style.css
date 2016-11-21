@@ -17,6 +17,9 @@ a{
 input,textarea{
     outline: none;
 }
+.clearfix{
+    clear:both;
+}
 .pull-left{
     float:left!important;
 }
@@ -932,7 +935,7 @@ input,textarea{
     color:#9b9b9b;
 }
 .banner{
-    background:url('../images/banner_bg.jpg') no-repeat 0 0;
+    background:url('http://of0ohiudu.bkt.clouddn.com/base/banner_bg.jpg?imageView2/2/w/2000') no-repeat 0 0;
     margin-top:82px;
     color:#fff;
 }
@@ -974,6 +977,7 @@ input,textarea{
 #index .banner{
     padding:0;
     margin:0;
+    background:transparent;
 }
 .slide img{
     display: block;
@@ -1067,10 +1071,11 @@ input,textarea{
 }
 .about-image-block ul li .img-box{
     margin:-194px 0 0 10px;
-    border:10px solid #000;
+    border:4px solid #000;
+    background: #000;
 }
 .about-image-block ul li a:hover .item-bg, .about-image-block ul li a:hover .img-box{
-
+    cursor: default;
     border-color:#f9c03a;
 }
 .about-image-block ul li img{
@@ -1177,11 +1182,14 @@ input,textarea{
     float:left;
 
 }
+.product-list li .item-block{
+    padding:0 15px;
+}
 .product-list li a{
     display:block;
     float:left;
     position: relative;
-    margin:0 15px;
+    width:100%;
     border:2px solid #F2D6A2;
     text-align:center;
     color:#333;
@@ -1223,6 +1231,10 @@ input,textarea{
 .product-series li a{
     margin:0;
     padding:0 15px;
+    color:#666;
+}
+.product-series li a:hover{
+    color:#F2BB74;
 }
 #contact .banner .container .wpb_wrapper{
     height:500px;
@@ -1252,12 +1264,18 @@ input,textarea{
 }
 
 @media screen and (max-width:1440px) {
+    .banner .bx-viewport{
+        min-height: 400px;
+    }
     .header .container, .row-fluid .container, .footer .row, .product-container, .news-container,#contact .contact-container{
         padding-left: 8%;
         padding-right: 8%;
     }
 }
 @media screen and (max-width:1200px) {
+    .banner .bx-viewport{
+        min-height: 200px;
+    }
     .header .container{
         padding-left:4%;
         padding-right:4%;
@@ -1268,6 +1286,9 @@ input,textarea{
     }
 }
 @media screen and (max-width:992px) {
+    .banner .bx-viewport{
+        min-height: 150px;
+    }
     .header .container{
         padding-left:3%;
         padding-right:3%;
@@ -1329,6 +1350,9 @@ input,textarea{
     }
 }
 @media  screen and (max-width: 414px) {
+    .banner .bx-viewport{
+        min-height: 120px;
+    }
     .header .logo img{
         height: 40px;
     }

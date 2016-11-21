@@ -4,24 +4,50 @@ var express = require('express');
 var router = express.Router();
 
 
-router.get('/',function(req,res){
-    var params=req.query;
-
-    var list=handleEvents.getProductList(params);
-    res.send({list:list,series:series});
-});
-
-
 var productList=[],
     series=[];
 
-var handleEvents={
-    getProductList:function (params){
+router.get('/',function(req,res){
+    var params=req.query;
+    var obj=handleEvents.getData(params);
 
+    res.send({
+        list:obj.list,
+        series:series,
+        info:{
+            page:obj.page
+        }
+    });
+});
+
+
+
+var handleEvents={
+    getData:function (params){
+        var series=params.type===''?undefined:params.type;
         var page=Number(params.page);
         var size=Number(params.size);
         var start=page*size;
-        return productList.slice(start,start+size);
+        var pageCount,list;
+
+        if(isNaN(series)){
+
+            pageCount=Math.ceil(productList.length/size);
+            return {
+                    page:pageCount,
+                    list:productList.slice(start,start+size)
+            };
+        }else{
+            series=Number(series);
+            list= this.where(productList,{type:series});
+
+            return {
+                page:Math.ceil(list.length/size),
+                list:list.slice(start,start+size)
+            };
+
+        }
+
     },
     scanFile:function(path){
         var fileList    = [],
@@ -48,8 +74,21 @@ var handleEvents={
 
         return fileList;
     },
-    where:function(){
-
+    where:function(e,t){
+        var i, s = e.length, a = 0, o = 0,arr=[];
+        if (0 === e.length)
+            return arr;
+        for (var n = 0; n < s; n++) {
+            a = 0,
+                o = 0;
+            for (var r in t)
+                a++,
+                    e[n][r] === t[r] && (i = e[n],
+                    o++);
+            if (a === o)
+                arr.push(e[n]);
+        }
+        return arr;
     }
 };
 

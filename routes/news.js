@@ -3,14 +3,16 @@ var fs=require('fs');
 var express = require('express');
 var router = express.Router();
 
+var newsList=[];
 
 router.get('/',function(req,res){
     var params=req.query;
 
     var list=handleEvents.getNewsList(params);
     var titleList=handleEvents.getTitleList(list.slice(0));
+    var page=newsList.length/params.size;
 
-    res.send({list:list,titleList:titleList});
+    res.send({list:list,titleList:titleList,info:{page:Math.ceil(page)}});
 });
 
 router.get('/detail',function(req,res){
@@ -28,7 +30,7 @@ router.get('/detail',function(req,res){
 
 });
 
-var newsList=[];
+
 
 var handleEvents={
     distance:function(reservedList,list){
