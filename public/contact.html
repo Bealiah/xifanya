@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -114,8 +115,6 @@
 
 </div>
 
-
-
 <footer class="footer">
     <div class="footer-wrap">
         <div class="container">
@@ -173,9 +172,9 @@
                         <h3 class="title-widget"><span>留言</span></h3>
                         <form name="messageForm" role="form">
                             <div class="ContactForm">
-                                <input type="text" name="your-name" value="" size="40"  placeholder="您的称呼...">
-                                <input type="email" name="your-email" value="" size="40" placeholder="您的邮箱/手机号...">
-                                <textarea name="your-message" style="height:80px;" cols="40" rows="10"placeholder="捎句话..."></textarea>
+                                <input type="text" name="userName" value="" size="40"  placeholder="您的称呼...">
+                                <input type="email" name="email" value="" size="40" placeholder="您的邮箱/手机号...">
+                                <textarea name="message" style="height:80px;" cols="40" rows="10"placeholder="捎句话..."></textarea>
                                 <input type="submit" value="发 送" class="submit-btn">
                             </div>
                         </form>
@@ -198,6 +197,20 @@
         </div><!--end class container-->
     </div><!--end class footerbottom -->
 </footer>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[name="messageForm"]').on('submit',function(e){
+            e.preventDefault();
+            var arr=$(e.currentTarget).serializeArray();
 
+            $.post('/message',arr).success(function(){
+                alert('感谢您的留言');
+            });
+
+        });
+    });
+</script>
 </body>
 </html>
+
