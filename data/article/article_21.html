@@ -1,0 +1,30 @@
+<div class="article-2">
+    <style>
+        .article-2 {
+
+        }
+        .video-block{
+            margin:auto;
+            text-align:center;
+        }
+    </style>
+    <div style="text-align:center;margin:50px 0;">
+        想知道施工要注意哪些事项，我们有很直观的视频介绍<br/>
+    </div>
+    <div class="video-block">
+
+
+    </div>
+
+    <script>
+        (function(){
+            var width=window.innerWidth||window.screen.availWidth;
+            width=width*0.4;
+            var html='<object data="http://player.youku.com/player.php/sid/XMjA0NDE5MjQ4/v.mp4" width="'+width+'" height="'+width+'">' +
+                    '<embed width="'+width+'" height="'+width+'" type="application/x-shockwave-flash" align="middle" quality="high" ' +
+                    'src="http://player.youku.com/player.php/sid/XMjA0NDE5MjQ4/v.swf" allowscriptaccess="sameDomain" />' +
+                    '</object>';
+            $('.video-block').html(html);
+        })();
+    </script>
+</div>

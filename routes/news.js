@@ -16,8 +16,8 @@ router.get('/',function(req,res){
 });
 
 router.get('/detail',function(req,res){
-    var id=Number(req.query.id)+1;console.log(newsList);
-    var item= handleEvents.findWhere(newsList,{id:id});
+    var id=Number(req.query.id);
+    var item= handleEvents.findWhere(newsList,{id:id-1});
     fs.readFile('data/article/article_'+id+'.html','utf8',function(err,data){
         if(err){
             // writeLog({filename:file},'read file content error');
