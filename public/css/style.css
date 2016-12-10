@@ -831,7 +831,7 @@ input,textarea{
 .row-fluid .title{
     text-align:center;
     font-size:30px;
-    margin: 100px auto 20px;
+    margin: 40px auto 20px;
     text-align: center;
 }
 
@@ -1094,7 +1094,7 @@ input,textarea{
     padding:0 15px;
 }
 #news .newsList li{
-    padding: 48px 30px 45px;
+    padding: 30px 30px 45px;
     background:#fff;
     margin-bottom: 40px;
 }
@@ -1110,7 +1110,7 @@ input,textarea{
     font-style: italic;
     line-height: 22px;
     color: #b5b5b5;
-    margin: 0 3px 0 0;
+    margin: 10px 3px 20px 0;
 }
 #news .newsList li .description{
     font-size: 14px;
