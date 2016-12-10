@@ -50,6 +50,7 @@ var handleEvents={
     },
     getNewsList:function (params){
         var page=Number(params.page);
+            page=page<1?page:page-1;
         var size=Number(params.size);
         var id=Number(params.id)-1;
         if(id>0){

@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd32371e-7d4a-4914-a254-31baf7e1ffd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_10.html" afterPath="$PROJECT_DIR$/data/article/article_10.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_11.html" afterPath="$PROJECT_DIR$/data/article/article_11.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_12.html" afterPath="$PROJECT_DIR$/data/article/article_12.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_13.html" afterPath="$PROJECT_DIR$/data/article/article_13.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_14.html" afterPath="$PROJECT_DIR$/data/article/article_14.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_15.html" afterPath="$PROJECT_DIR$/data/article/article_15.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_16.html" afterPath="$PROJECT_DIR$/data/article/article_16.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_17.html" afterPath="$PROJECT_DIR$/data/article/article_17.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_18.html" afterPath="$PROJECT_DIR$/data/article/article_18.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_19.html" afterPath="$PROJECT_DIR$/data/article/article_19.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_20.html" afterPath="$PROJECT_DIR$/data/article/article_20.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_3.html" afterPath="$PROJECT_DIR$/data/article/article_3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_4.html" afterPath="$PROJECT_DIR$/data/article/article_4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_5.html" afterPath="$PROJECT_DIR$/data/article/article_5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_6.html" afterPath="$PROJECT_DIR$/data/article/article_6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_7.html" afterPath="$PROJECT_DIR$/data/article/article_7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article/article_9.html" afterPath="$PROJECT_DIR$/data/article/article_9.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/jsonData/newsList.json" afterPath="$PROJECT_DIR$/data/jsonData/newsList.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/news.html" afterPath="$PROJECT_DIR$/public/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/newsDetail.html" afterPath="$PROJECT_DIR$/public/newsDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/products.html" afterPath="$PROJECT_DIR$/public/products.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/jsonData/series.json" afterPath="$PROJECT_DIR$/data/jsonData/series.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/news.js" afterPath="$PROJECT_DIR$/routes/news.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/product.js" afterPath="$PROJECT_DIR$/routes/product.js" />
     </list>
     <ignored path="xifanya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,6 +28,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07364787">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="26" />
+              <folding>
+                <marker date="1479900448329" expanded="true" signature="13424:13453" placeholder="..." />
+                <marker date="1479900448329" expanded="true" signature="13512:13538" placeholder="..." />
+                <marker date="1479900448329" expanded="true" signature="13680:13698" placeholder="..." />
+                <marker date="1479900448329" expanded="true" signature="16108:16144" placeholder="..." />
+                <marker date="1479900448329" expanded="true" signature="16842:17043" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="newsDetail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/newsDetail.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -70,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3904762">
-              <caret line="833" column="27" selection-start-line="833" selection-start-column="27" selection-end-line="833" selection-end-column="27" />
+            <state vertical-scroll-proportion="-5.3818183">
+              <caret line="831" column="22" selection-start-line="831" selection-start-column="22" selection-end-line="831" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -101,16 +97,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article_3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/article/article_3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="97" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="97" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="article_4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/article/article_4.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -131,31 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/about.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="165" column="29" selection-start-line="165" selection-start-column="29" selection-end-line="165" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.16">
-              <caret line="324" column="50" selection-start-line="324" selection-start-column="50" selection-end-line="324" selection-end-column="50" />
+            <state vertical-scroll-proportion="-21.12">
+              <caret line="281" column="39" selection-start-line="281" selection-start-column="39" selection-end-line="281" selection-end-column="39" />
               <folding>
                 <marker date="1481331743541" expanded="true" signature="12879:12912" placeholder="..." />
                 <marker date="1481331743541" expanded="true" signature="12985:12996" placeholder="..." />
@@ -164,14 +130,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article_21.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/article/article_21.html">
+      <file leaf-file-name="news.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/news.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="30" selection-start-line="22" selection-start-column="22" selection-end-line="25" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/product.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="series.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jsonData/series.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.56">
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -222,12 +206,9 @@
         <option value="$PROJECT_DIR$/data/article/article_9.html" />
         <option value="$PROJECT_DIR$/data/article/article_6.html" />
         <option value="$PROJECT_DIR$/data/jsonData/productList.json" />
-        <option value="$PROJECT_DIR$/routes/product.js" />
-        <option value="$PROJECT_DIR$/data/jsonData/series.json" />
         <option value="$PROJECT_DIR$/data/article/article_4.html" />
         <option value="$PROJECT_DIR$/data/article/article_5.html" />
         <option value="$PROJECT_DIR$/data/article/article_7.html" />
-        <option value="$PROJECT_DIR$/routes/news.js" />
         <option value="$PROJECT_DIR$/data/jsonData/newsList.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/data/article/article_21.html" />
@@ -237,6 +218,9 @@
         <option value="$PROJECT_DIR$/public/newsDetail.html" />
         <option value="$PROJECT_DIR$/public/news.html" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/routes/news.js" />
+        <option value="$PROJECT_DIR$/data/jsonData/series.json" />
+        <option value="$PROJECT_DIR$/routes/product.js" />
       </list>
     </option>
   </component>
@@ -507,18 +491,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08874459" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -662,20 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/jsonData/productList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2152.08">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/jsonData/series.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.32">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/article/article_9.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.92">
@@ -795,45 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="72" selection-start-line="98" selection-start-column="72" selection-end-line="98" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/news.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/jsonData/newsList.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="206" column="45" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="190" column="29" selection-start-line="175" selection-start-column="24" selection-end-line="190" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#aside#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#aside#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#aside#0;n#div#3;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1479900448329" expanded="true" signature="13424:13453" placeholder="..." />
-            <marker date="1479900448329" expanded="true" signature="13512:13538" placeholder="..." />
-            <marker date="1479900448329" expanded="true" signature="13680:13698" placeholder="..." />
-            <marker date="1479900448329" expanded="true" signature="16108:16144" placeholder="..." />
-            <marker date="1479900448329" expanded="true" signature="16842:17043" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -858,7 +793,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="30" selection-start-line="22" selection-start-column="22" selection-end-line="25" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -926,10 +861,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3818183">
+          <caret line="831" column="22" selection-start-line="831" selection-start-column="22" selection-end-line="831" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.16">
-          <caret line="324" column="50" selection-start-line="324" selection-start-column="50" selection-end-line="324" selection-end-column="50" />
+        <state vertical-scroll-proportion="-21.12">
+          <caret line="281" column="39" selection-start-line="281" selection-start-column="39" selection-end-line="281" selection-end-column="39" />
           <folding>
             <marker date="1481331743541" expanded="true" signature="12879:12912" placeholder="..." />
             <marker date="1481331743541" expanded="true" signature="12985:12996" placeholder="..." />
@@ -937,11 +880,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+    <entry file="file://$PROJECT_DIR$/routes/news.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3904762">
-          <caret line="833" column="27" selection-start-line="833" selection-start-column="27" selection-end-line="833" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jsonData/productList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48505747">
+          <caret line="3429" column="30" selection-start-line="3429" selection-start-column="30" selection-end-line="3429" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jsonData/series.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.56">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07364787">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <marker date="1479900448329" expanded="true" signature="13424:13453" placeholder="..." />
+            <marker date="1479900448329" expanded="true" signature="13512:13538" placeholder="..." />
+            <marker date="1479900448329" expanded="true" signature="13680:13698" placeholder="..." />
+            <marker date="1479900448329" expanded="true" signature="16108:16144" placeholder="..." />
+            <marker date="1479900448329" expanded="true" signature="16842:17043" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

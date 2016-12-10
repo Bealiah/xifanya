@@ -26,6 +26,7 @@ var handleEvents={
     getData:function (params){
         var series=params.type===''?undefined:params.type;
         var page=Number(params.page);
+            page=page<1?page:page-1;console.log(page);
         var size=Number(params.size);
         var start=page*size;
         var pageCount,list;

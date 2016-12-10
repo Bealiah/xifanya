@@ -2,23 +2,22 @@
 
 {
   "list":[
-      {"title":"YS-01A~YS-09A","type":0},
-      {"title":"YS-01A~YS-09A","type":0},
-      {"title":"YS-B","type":1},
-      {"title":"YS-C","type":2},
-      {"title":"YS-D","type":3},
-      {"title":"YS-E","type":4},
-      {"title":"YS-F","type":5},
-      {"title":"YS-G","type":6},
-      {"title":"YS-H","type":7},
-      {"title":"YS-I","type":8},
-      {"title":"YS-J","type":9},
-      {"title":"YS-K","type":10},
-      {"title":"YS-M","type":11},
-      {"title":"YS-P","type":12},
-      {"title":"YS-Q","type":13},
-      {"title":"YS-R","type":14},
-      {"title":"YS603","type":15}
+      {"title":"YS-01A~YS-09A","type":1},
+      {"title":"YS-B","type":2},
+      {"title":"YS-C","type":3},
+      {"title":"YS-D","type":4},
+      {"title":"YS-E","type":5},
+      {"title":"YS-F","type":6},
+      {"title":"YS-G","type":7},
+      {"title":"YS-H","type":8},
+      {"title":"YS-I","type":9},
+      {"title":"YS-J","type":10},
+      {"title":"YS-K","type":11},
+      {"title":"YS-M","type":12},
+      {"title":"YS-P","type":13},
+      {"title":"YS-Q","type":14},
+      {"title":"YS-R","type":15},
+      {"title":"YS603","type":16}
   ]
 
 }
