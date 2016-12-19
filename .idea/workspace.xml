@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd32371e-7d4a-4914-a254-31baf7e1ffd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/jsonData/productList.json" afterPath="$PROJECT_DIR$/data/jsonData/productList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="xifanya.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,17 +26,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.24">
-              <caret line="175" column="61" selection-start-line="175" selection-start-column="61" selection-end-line="175" selection-end-column="61" />
+            <state vertical-scroll-proportion="-0.12514898">
+              <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#aside#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1482076260000" expanded="true" signature="15842:16043" placeholder="..." />
+                <marker date="1482126215806" expanded="true" signature="12444:12473" placeholder="..." />
+                <marker date="1482126215806" expanded="true" signature="12532:12558" placeholder="..." />
+                <marker date="1482126215806" expanded="true" signature="12700:12718" placeholder="..." />
+                <marker date="1482126215806" expanded="true" signature="15835:16036" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -68,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productList.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="productList.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/jsonData/productList.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2181168">
-              <caret line="998" column="70" selection-start-line="998" selection-start-column="70" selection-end-line="998" selection-end-column="70" />
+            <state vertical-scroll-proportion="-1.0">
+              <caret line="990" column="28" selection-start-line="990" selection-start-column="28" selection-end-line="990" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -200,10 +203,10 @@
         <option value="$PROJECT_DIR$/public/news.html" />
         <option value="$PROJECT_DIR$/routes/news.js" />
         <option value="$PROJECT_DIR$/routes/product.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/data/jsonData/series.json" />
         <option value="$PROJECT_DIR$/data/jsonData/productList.json" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -853,20 +856,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.24">
-          <caret line="175" column="61" selection-start-line="175" selection-start-column="61" selection-end-line="175" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#aside#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1482076260000" expanded="true" signature="15842:16043" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.8">
@@ -885,9 +874,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/jsonData/productList.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2181168">
-          <caret line="998" column="70" selection-start-line="998" selection-start-column="70" selection-end-line="998" selection-end-column="70" />
+        <state vertical-scroll-proportion="-1.0">
+          <caret line="990" column="28" selection-start-line="990" selection-start-column="28" selection-end-line="990" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12514898">
+          <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#aside#0;n#div#1;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1482126215806" expanded="true" signature="12444:12473" placeholder="..." />
+            <marker date="1482126215806" expanded="true" signature="12532:12558" placeholder="..." />
+            <marker date="1482126215806" expanded="true" signature="12700:12718" placeholder="..." />
+            <marker date="1482126215806" expanded="true" signature="15835:16036" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
